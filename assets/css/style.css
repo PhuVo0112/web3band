@@ -1,0 +1,92 @@
+    /* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Lato", sans-serif;
+}
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+/* 
+1.Vị trí
+2.Kích thước
+3.Màu sắc
+4.Kiểu dáng (kiểu chữ, hình tròn, hình vuông,...)
+*/
+#main{
+
+}
+
+#header{
+    height: 46.5px;
+    background-color: black;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;    
+}
+
+#nav li {
+
+    position: relative;
+}
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    display: block;
+    text-decoration: none;
+    line-height: 46.5px;
+    padding:0 24px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a  {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 100%;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+
+
+#slider{
+    width: 100%;
+    min-height: 250px;
+    background-color: grey;
+}
+
+#content{
+
+}
+
+#footer{
+
+}
