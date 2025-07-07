@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 <body>
@@ -15,9 +15,9 @@
             <!-- Begin NAV -->
             <ul id="nav">
                 <li><a href="#">HOME</a></li>
-                <li><a href="">BAND</a></li>
-                <li><a href="">TOUR</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#band-section">BAND</a></li>
+                <li><a href="#tour-section">TOUR</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
                 <li>
                     <a href="">
                         MORE
@@ -42,16 +42,128 @@
         </div>
         
         <div id="slider">
-            <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://www.w3schools.com/w3images/la.jpg" width=100% height=auto>
-
+            <div class="text-content">
+                <h3 class="text-heading">NEW YORK</h3>
+                <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+            </div>
         </div>
 
         <div id="content">
+            <div id="band-section">
+                <div class="content-section">
+                    <h2 class="section-heading">THE BAND</h2>
+                    <p class="section-sub-heading">We love music</p>
+                    <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="team">
+                        <div class="member-item">
+                            <p class="member-name">Name</p>
+                            <img src="./assets/image/band/bandmember.jpg" alt="Name" class="member-img">
+                        </div>
 
+                        <div class="member-item">
+                            <p class="member-name">Name</p>
+                            <img src="./assets/image/band/bandmember.jpg" alt="Name" class="member-img">
+                        </div>
+
+                        <div class="member-item">
+                            <p class="member-name">Name</p>
+                            <img src="./assets/image/band/bandmember.jpg" alt="Name" class="member-img">
+                        </div>          
+                    </div>
+                </div>
+            </div>
+            <!-- Tour -->
+            <div id="tour-section">
+                <div class="content-section text-white">
+                    <h2 class="section-heading">TOUR DATES</h2>
+                    <p class="section-sub-heading">Remember to book your tickets!</p>   
+                    <ul class="ticket">
+                        <li>September <span class="sold-out text-white">Sold out</span></li>
+                        <li>October <span class="sold-out text-white">Sold out</span></li>
+                        <li>November <span class="quantity text-white">3</span></li>
+                        <div class="clear"></div>
+                    </ul>
+
+                    <!-- Places -->
+                    <div class="places-list">
+                        <div class="places-item" style="margin-left:  = 0;">
+                            <img src="./assets/image/tour/newyork.jpg" alt="">
+                            <div class="box">
+                                <p>New York</p>
+                                <p>Fri 27 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            </div>
+                        </div>
+
+                        <div class="places-item">
+                            <img src="./assets/image/tour/paris.jpg" alt="">
+                            <div class="box">
+                                <p>Paris</p>
+                                <p>Sat 28 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            </div>
+                         </div>
+                         <div class="places-item">
+                            <img src="./assets/image/tour/newyork.jpg" alt="">
+                            <div class="box">
+                                <p>San Francisco</p>
+                                <p>Sun 29 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- contact -->
+            <div id="contact-section">
+                <div class="content-section">
+                    <h2 class="section-heading">CONTACT</h2>
+                    <p class="section-sub-heading">Drop a note!</p>
+                    <div class="content-box">
+                        <div class="icon-left">
+                            <i class="fa-solid fa-location-dot" ></i>
+                            <p>Chicago, US</p>
+                            <br>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>Phone: +00 151515</p>
+                            <br>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>Email:mail@mail.com</p>
+                        </div>
+                        <div class="input-right">
+                            <div class="half">
+                                <input class="border input" type="text" placeholder="Name" required="" name="Name">
+                            </div>
+                            <div class="half">
+                                <input class="border input" type="text" placeholder="Mail" required="" name="Mail">
+                            </div>
+                            <div class="mess">
+                                <input class="border input" type="text" placeholder="Message" required="" name="Message">
+                            </div>
+                            <button class="sendBut" type="submit">SEND</button>
+                        </div>
+                    </div>
+                
+                    
+                </div>
+            </div>
         </div>
-
+        <img src="./assets/image/map.jpg" alt="" style="width: 100%;">
         <div id="footer">
-            
+            <div class="content-section">
+                    <div class="section-heading">
+                        <i class="fa-brands fa-square-facebook" ></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </div>
+                    <p class="section-sub-heading">Powered by PaulWalker</p>
+            </div>
         </div>
     </div>
 </body>
